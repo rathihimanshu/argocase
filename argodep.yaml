@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argodep
+  namespace: argons
+spec:
+  selector:
+    matchLabels:
+      app: argodep
+  template:
+    metadata:
+      labels:
+        app: argodep
+    spec:
+      containers:
+      - name: argodep
+        image: nginx
+        
