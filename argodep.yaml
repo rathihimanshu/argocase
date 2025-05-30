@@ -4,7 +4,7 @@ metadata:
   name: argodep
   namespace: argons
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: argodep
